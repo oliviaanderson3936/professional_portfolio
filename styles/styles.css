@@ -1,0 +1,254 @@
+/*page-properties - these properties identify the positon width and margin that the page should have*/
+* {position: relative; max-width: 1800px; margin: auto;}
+/*font - the following properties identify the font families and sizes that are to be used throughout the website*/
+html, body {height: 100%;}
+body {font-family: 'Varela Round', sans-serif; font-size: 16px; color: #121416;}
+h1, h2, h3, h4 {font-family: 'Montserrat', sans-serif;}
+p {font-family: 'Varela Round', sans-serif; font-size: 16px; color: #121416;}
+a {color: #121416;}
+/*nav*/
+nav {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 2px;
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: block;
+    width: 250px;
+    float: left;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 140px;
+    position: relative;
+}
+nav ul li a:hover {
+    font-weight: bold;
+    color: #7ac1cd;
+}
+
+/*main - the properties identify the background colours, padding and measurements that each of the main sections of the pages will use*/
+main {
+    background-color: #CBF6EC;
+    padding: 30px;
+    padding-left: 50px;
+    height: 250px;
+}
+#portrait {
+    width: 19%;
+    float: right;
+}
+#timeline {
+    background-color: #f5f5f5;
+    align-content: center;
+    height: max-content;
+    float: left;
+}
+#cases {
+    background-color: #f5f5f5;
+    height: 20px;
+    text-align: center;
+}
+#analysis {
+    height: 75px;
+}
+/*section - the section properties describe the measurments and colour designs for different sections of the website.*/
+#about {
+    width: 75%;
+    float: left;
+}
+#spotlight {
+    background-color: #ff8f85;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px;
+}
+#skill {
+    height: 330px;
+}
+#high-school {
+    border-top: #7BC1CD 2px solid;
+    border-bottom: #7BC1CD 2px solid;
+    padding: 20px 50px 20px 50px;
+    height: 125px;
+}
+#college {
+    border-top: #CBF6EC 2px solid;
+    border-bottom: #CBF6EC 2px solid;
+    padding: 20px 50px 20px 50px;
+    height: 125px;
+}
+#uni {
+    border-top: #ff8f85 2px solid;
+    border-bottom: #ff8f85 2px solid;
+    padding: 20px 50px 20px 50px;
+    height: 125px;
+}
+#pgce {
+    border-top: #7BC1CD 2px solid;
+    padding: 20px 50px 20px 50px;
+    height: 125px;
+}
+#work {
+    background-color: #f5f5f5;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+#form {
+    background-color: #f5f5f5;
+}
+#overview {
+    background-color: #CBF6EC;
+    padding: 20px 50px 20px 50px;
+    float: left;
+}
+#methods {
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+    background-color: #ff8f85;
+}
+#recommend {
+    height: max-content;
+}
+#palette {
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+}
+#research_method {
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+    background-color: #ff8f85;
+}
+#design {
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+    background-color: #7BC1CD;
+}
+#dev_design {
+    width: 46%;
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#testing {
+    width: 46%;
+    float: left;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*aside - the aside properties describe the measurments and colour designs for different aside sections of the website which differ to that of the sections*/
+aside {
+    width: 215px;
+}
+#skill_spot {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    height: 200px;
+}
+#skill_spot h2 {
+    margin-bottom: 10px;
+}
+#facts {
+    background-color: #CBF6EC;
+    float: right;
+    width: 40.5%;
+    height: 1050px;
+    padding: 20px;
+}
+#facts h2 {
+    padding-bottom: 20px;
+}
+#logo {
+    float: left;
+}
+#rec {
+    float: left;
+    margin: 20px 50px 20px 50px;
+    height: max-content;
+    width: 200px;
+}
+#low_prototype {
+    width: 45%;
+    float: left;
+}
+#high_prototype {
+    width: 45%;
+    float:right;
+}
+#model {
+    float: left;
+    height: max-content;
+    width: 240px;
+    padding-right: 50px;
+}
+#framework {
+    padding: 10px 0px;
+}
+
+/*form - sets the dimensions to fit the form onto the contact page as well as the colours that are to be used throughout the form. Also sets formatting for what happens when elements of the form are focussed on and hovered over*/
+form {
+    width: 500px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #f5f5f5;
+}
+form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.feedback-input {
+    color: #121416;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #ff8f85;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  .feedback-input:focus { border:2px solid ; }
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  #submit {
+      background: #ff8f85;
+      border-radius: 5px;
+      padding: 10px 218px;
+      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  #submit:hover { background: #7BC1CD; }
+
+/*gallery - sets the dimentsions for the gallery*/
+#gallery {
+    padding-top: 10px;
+}
+/*footer*/
+footer {
+    color: #f5f5f5;
+    background-color: #121416;
+    height: 100px;
+    padding-left: 50px;
+    padding-top: 10px;
+    clear: both;
+}

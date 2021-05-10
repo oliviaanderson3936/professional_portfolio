@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Anderson - Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo_banner" src="images/home_banner.png" alt="Olivia Anderson Banner" width="100%">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main id="analysis"> <!--title of the project, and git repository-->
+        <h2>Server and Client Side Scripting</h2>
+        <br>
+        <a style="text-decoration: none;" href="https://bitbucket.org/23885831/cw2-questionnaire_app/src/master/"><p>Git Repository</p></a>
+    </main>
+    <section id="overview"> <!--indepth overview of the project -->
+        <h3 style="text-decoration: underline;">Project Overview</h3>
+        <p>This project required me to build a system to aid in capturing online feedback for primary research. The questionnaire system needed to have a secure administration backend for questionnaire and question creation as well as
+            providing a view for administrators to see responses. The system was developed using Laravel. The questionnaire were made to be shown to users via an unsecured interface that can be developed in either Laravel or via AngularJS.
+        </p>
+    </section>
+    <section id="research_method"> <!--Description of the system modelling undertaken to complete the project-->
+        <aside id="model">
+            <h3 style="text-decoration: underline;">ERD Diagram</h3>
+            <p>Developing an ERD diagram was the first system model created. The ERD diagram shows the structural integrity of the database and the relationships between each element.</p>
+            <a href="images/case1/erd.png"><img src="images/case1/erd.png" alt="ERD Diagram" width="240"></a>
+        </aside>
+        <aside id="model">
+            <h3 style="text-decoration: underline;">Use Case Diagram</h3>
+            <p>Use case diagrams were developed to model the system of the system. The use case identified the main tasks that can be completed and the steps to which that task would be carried out.</p>
+            <a href="images/case1/use case.png"><img src="images/case1/use case.png" alt="Use Case Diagram" width="240"></a>
+        </aside>
+        <aside id="model">
+            <h3 style="text-decoration: underline;">Class Diagram</h3>
+            <p>A class diagram was developed to describe the structure of the system. This was done by identifying the systems classes, attributes, methods and the relationships between each table.</p>
+            <a href="images/case1/class.png"><img src="images/case1/class.png" alt="Class Diagram" width="240"></a>
+        </aside>
+        <aside id="model">
+            <h3 style="text-decoration: underline;">Sequence Diagram</h3>
+            <p>Sequence diagrams were developed to show the process in which a task is completed, and if a sub-task cannot be authorised/completed then it shows the process then taken to correct it.</p>
+            <a href="images/case1/sequence.png"><img src="images/case1/sequence.png" alt="Sequence Diagram" width="240"></a>
+        </aside>
+    </section>
+    <section id="design"> <!--Description of the frameworks used to complete the project-->
+        <h3 style="text-decoration: underline;">Frameworks</h3>
+        <div id="framework">
+            <h4>Composer</h4>
+            <p>Although Composer is not a framework it was a very important section of the build. Composer is a dependency manager and therefore manages the PHP software and the libraries within it.
+                As well as this it solves the autoloading inside of the PHP packages. For Composer to work on this application it needed to be installed at the very beginning of the build.
+            </p>
+        </div>
+        <div id="framework">
+            <h4>Laravel</h4>
+            <p>The questionnaire application was built using Laravel due to it being able to create web applications and makes development tasks easier to complete due to the simple syntax. Laravel 
+                also provides a file structure of professional standards which when used for a large project like this one, was highly beneficial. It also makes it much easier to manage migrations, 
+                seeds, controllers, etc… because of the pre-existing files and folders that are included. 
+                Authentication (login, register) is an important part of the questionnaire app and this is a feature that is implemented through Laravel.
+            </p>    
+        </div>
+        <div id="framework">
+            <h4>Bootstrap 4</h4>
+            <p>Bootstrap 4 is an open source CSS framework, and this was integrated inside of the Laravel framework to enable the CSS side of the build much more manageable. As well as providing CSS 
+             code it also enabled a fully responsive website quickly and easily without the developer (myself) having to ensure that this had been implemented. </p>
+        </div>
+    </section>
+    <section id="dev_design"> <!--Description of the design development and the pages it includes-->
+        <h3 style="text-decoration: underline;">Questionnaire Design</h3>
+        <p>The questionnaire user-interface included the following pages:
+            <ul>
+                <li>Landing Page</li>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Complete Questionnaire</li>
+                <li>Successful Completion</li>
+                <li>Dashboard</li>
+                <li>Questionnaire Development</li>
+                <li>Create New Questionnaire</li>
+                <li>Create Question and Answer</li>
+                <li>Edit Questionnaire</li>
+            </ul>
+        </p>
+        <a href="images/case1/questionnaire_dev_design.png"><img src="images/case1/questionnaire_dev_design.png" alt="Questionnaire Design Example" width="250" style="padding-top: 10px;"></a>
+        <a href="images/case1/design2.png"><img src="images/case1/design2.png" alt="Questionnaire Design Example" width="250" style="padding-top: 10px;"></a>
+    </section>
+    <section id="testing"> <!--Description of the testing undertaken to ensure the website works as it should-->
+        <h3 style="text-decoration: underline;">Testing</h3>
+        <p>To test the questionnaire application an automated approach was taken. Behaviour Driven Design (BDD) fucntional testing was undertaken to test the following objectives:</p>
+        <ul>
+            <li>Ensure that the application, under testing, conforms to requirements</li>
+            <li>Ensure that the application meets some if not all of the specifications defined by the client</li>
+        </ul>
+        <p>The tests completed follow what the user would see, click, where buttons navigate them to and what input fields they would fill in. The tests are as followed:</p>
+        <ul>
+            <li>Create a Questionnaire and Questions</li>
+            <li>Login</li>
+            <li>Access questionnaire to complete it without needing to sign in</li>
+        </ul>
+        <a href="images/case1/testing.jpg"><img src="images/case1/testing.jpg" alt="Completed Testing" width="250" style="padding-top: 10px;"></a>
+    </section>
+    <footer>
+        <h3>Contact Me</h3>
+        <p style="color: #f5f5f5;">Mobile: 07763640845</p>
+        <p style="color: #f5f5f5;">Email: oanderson00@hotmail.com</p>
+    </footer>
+</body>
+</html>
